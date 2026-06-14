@@ -53,9 +53,22 @@ The private key never leaves Freighter: the app builds an **unsigned** transacti
 
 ## Screenshots
 
-| Connect | Connected + balance | Send confirmed |
-| --- | --- | --- |
-| ![Connect screen](screenshots/01-connect.png) | ![Connected with balance](screenshots/02-connected-balance.png) | ![Transaction confirmed](screenshots/03-send-success.png) |
+![Connect screen](screenshots/01-connect.png)
+
+> For the connected / balance / send views, run the app per Quick Start and connect Freighter on Testnet.
+
+## Verified on testnet
+
+This dApp was used to send a real payment on the Stellar test network:
+
+| Field | Value |
+| --- | --- |
+| From | `GB4LEOLLHSZZUWUFRDF2JIIC736CFR6ZL4FXA4TKKLLMMAER2N67M5IZ` |
+| To | `GCPXQLV7ZR6ANNJMO5T7FLPHYAXXXAMC7U3UYXOOBNXV73D2RJ4APSR2` |
+| Amount | 100 XLM |
+| Transaction | [`a92891…fcfa10`](https://stellar.expert/explorer/testnet/tx/a92891289db8ce3dbbafc9f9decdce77b2980cdf1cced40e53f11eafb8fcfa10) |
+
+Anyone can independently verify this transaction on Stellar Expert.
 
 ## License
 
