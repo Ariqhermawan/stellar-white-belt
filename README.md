@@ -70,6 +70,10 @@ This dApp was used to send a real payment on the Stellar test network:
 
 Anyone can independently verify this transaction on Stellar Expert.
 
+## Submission checklist
+
+See [`SUBMISSION.md`](SUBMISSION.md) for the reviewer-facing summary, on-chain proof, and run commands.
+
 ## License
 
 MIT
