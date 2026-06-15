@@ -131,6 +131,13 @@ export default function App() {
     if (!address || !canSend) return;
     setStatus({ kind: "pending", msg: "Building and signing transaction…" });
     try {
+      // Re-check the wallet network right before signing: it can change after connect.
+      const net = await currentNetwork();
+      setNetwork(net);
+      if (net !== "TESTNET") {
+        setStatus({ kind: "error", msg: "Switch Freighter to Testnet before sending." });
+        return;
+      }
       const { hash } = await sendPayment(address, to.trim(), amount.trim());
       setStatus({ kind: "success", msg: "Payment sent on testnet.", hash });
       setTo("");
